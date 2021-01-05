@@ -9,17 +9,16 @@ Bay area, with nearly 180,000 rides. The dataset used for this exploratory analy
 
 
 
-##### Data wrangling process:
-- fix multiple fields that are not in the correct dtype, i.e. `user_type` and `member_gender` should be categorical data type, etc
-- add new columns for trip duration in minute, trip day of week
-- add a new column calculating riders' age from 'member_birth_year'
-- filter out outlier ages from visual examination of the member age distribution and statistical percentile
-- cast 'member_age' to integer instead of float type
-- cast 'weekday' to category dtype for easy plotting
-- filter out outlier trip records where the duration was very long
+## Data wrangling:
+- fix fields that are not in the correct data type, i.e. `user_type` and `member_gender` as they should be categorical types.
+- add a new column for trip duration in minute, trip day of week.
+- add a new column calculating members' age from instead of 'member_birth_year'.
+- cast 'weekday' to category data type for easy plotting.
+- filter out outlier records where the `member_age` was very big.
+- filter out outlier records where the trip duration was very long.
 
 
-## Summary of Findings
+## Summary of Findings:
 
 The average duration of trips 12 minutes, and compared to weekends there were more trips on other weekdays (Mon-Fri).
 
